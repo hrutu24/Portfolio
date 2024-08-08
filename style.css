@@ -24,7 +24,6 @@ h1 {
 /* Other Text Styles */
 p, li {
     margin-bottom: 1em;
-    word-wrap: break-word;
 }
 
 /* Link Styles */
@@ -74,6 +73,11 @@ code, pre {
     color: #3eaf7c;          
     padding: 0.4rem 0.8rem;  
     border-radius: 4px;       
+}
+
+/* New Rule for Achievements List Items */
+#content ul li { /* Targets list items within #content specifically */
+    word-wrap: break-word; 
 }
 
 /* Responsive Styles (for smaller screens) */
