@@ -24,6 +24,7 @@ h1 {
 /* Other Text Styles */
 p, li {
     margin-bottom: 1em;
+    word-wrap: break-word;
 }
 
 /* Link Styles */
@@ -49,8 +50,8 @@ code, pre {
     width: 100%;   /* Make the content take up the full width */
     padding: 1rem; /* Add padding for better visual appearance */
     box-sizing: border-box; /* Include padding in the element's total width and height */
+    overflow-x: auto;  /* Add a horizontal scrollbar if needed */
 }
-
 
 #terminal { /* Simulates a terminal look */
     background-color: #1c1c1c;
@@ -60,7 +61,6 @@ code, pre {
     border: 2px solid #3eaf7c;
     border-radius: 8px;
 }
-
 
 /* Skills Container Styles */
 .skills-container {
@@ -76,10 +76,12 @@ code, pre {
     border-radius: 4px;       
 }
 
-
 /* Responsive Styles (for smaller screens) */
 @media (max-width: 768px) {
     body {
         padding: 1rem;
+    }
+    #content {
+        max-width: 95%; /* Adjust as needed */
     }
 }
